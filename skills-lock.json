@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "ai-image-generation": {
+      "source": "inference-sh-skills/skills",
+      "sourceType": "github",
+      "skillPath": "tools/image/ai-image-generation/SKILL.md",
+      "computedHash": "44864509b5ea55caf0abf708c1df16b64450232b97b8cd4b1e4d9c38bb94f583"
+    }
+  }
+}
