@@ -6,6 +6,12 @@
       "sourceType": "github",
       "skillPath": "tools/image/ai-image-generation/SKILL.md",
       "computedHash": "44864509b5ea55caf0abf708c1df16b64450232b97b8cd4b1e4d9c38bb94f583"
+    },
+    "product-photography": {
+      "source": "inference-sh-skills/skills",
+      "sourceType": "github",
+      "skillPath": "guides/photo/product-photography/SKILL.md",
+      "computedHash": "7553fa76097f15bebbeaa01e9db720c0437e0732412a6e739f6d16df21370700"
     }
   }
 }
