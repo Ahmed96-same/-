@@ -12,6 +12,12 @@
       "sourceType": "github",
       "skillPath": "guides/photo/product-photography/SKILL.md",
       "computedHash": "7553fa76097f15bebbeaa01e9db720c0437e0732412a6e739f6d16df21370700"
+    },
+    "review-contract": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "legal/skills/review-contract/SKILL.md",
+      "computedHash": "af4605b5ed7607547961c6965a8d6b0d23759d33e253dee5ceabb11a1b559080"
     }
   }
 }
