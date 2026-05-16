@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>دراسة الجدوى – مشروع المجمع التعليمي / أسد بابل</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Amiri','Times New Roman',serif; font-size:13.5pt; line-height:1.9; color:#111; background:#fff; direction:rtl; }
+  .page { width:210mm; margin:0 auto; padding:18mm 18mm 18mm 18mm; }
+
+  /* غلاف */
+  .cover { text-align:center; padding:40px 0 30px; border-bottom:4px double #1a3c6e; margin-bottom:30px; }
+  .cover h1 { font-size:24pt; color:#1a3c6e; margin-bottom:8px; }
+  .cover h2 { font-size:17pt; color:#333; margin-bottom:16px; }
+  .cover .meta { font-size:12pt; color:#555; line-height:2; }
+  .cover .confidential { display:inline-block; margin-top:14px; padding:4px 18px; border:2px solid #c00; color:#c00; font-size:11pt; letter-spacing:2px; }
+
+  /* عناوين */
+  h2.section { font-size:15pt; background:#1a3c6e; color:#fff; padding:7px 14px; margin:26px 0 12px; }
+  h3.sub { font-size:13.5pt; color:#1a3c6e; border-right:4px solid #1a3c6e; padding-right:10px; margin:16px 0 8px; }
+  h4.mini { font-size:13pt; font-weight:bold; margin:12px 0 6px; }
+
+  p { margin-bottom:9px; text-align:justify; }
+  ul, ol { padding-right:22px; margin:6px 0 10px; }
+  li { margin-bottom:5px; }
+
+  /* جداول */
+  table.t { width:100%; border-collapse:collapse; margin:10px 0 16px; font-size:12.5pt; }
+  table.t th { background:#1a3c6e; color:#fff; padding:8px 10px; text-align:center; border:1px solid #999; }
+  table.t td { padding:7px 10px; border:1px solid #bbb; text-align:center; }
+  table.t tr:nth-child(even) td { background:#f0f4fa; }
+  table.t td.label { text-align:right; font-weight:bold; background:#e8edf5; }
+  table.t td.total { font-weight:bold; background:#d0ddf5; }
+  table.t td.green { color:#006600; font-weight:bold; }
+  table.t td.red { color:#990000; font-weight:bold; }
+  table.t td.highlight { background:#fff3cc; font-weight:bold; }
+
+  /* بطاقات المؤشرات */
+  .kpi-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin:14px 0; }
+  .kpi-card { border:2px solid #1a3c6e; border-radius:6px; padding:12px; text-align:center; }
+  .kpi-card .val { font-size:18pt; font-weight:bold; color:#1a3c6e; }
+  .kpi-card .lbl { font-size:11pt; color:#555; margin-top:4px; }
+
+  /* تنبيه */
+  .alert { padding:10px 14px; margin:12px 0; border-radius:4px; font-size:12.5pt; }
+  .alert.green { background:#e6f4ea; border:1px solid #4caf50; }
+  .alert.yellow { background:#fff8e1; border:1px solid #f9a825; }
+  .alert.red { background:#fdecea; border:1px solid #f44336; }
+  .alert.blue { background:#e3f2fd; border:1px solid #1565c0; }
+
+  /* خط فاصل */
+  hr { border:none; border-top:1px solid #ccc; margin:18px 0; }
+
+  /* طباعة */
+  @media print {
+    .page { padding:12mm 15mm; width:100%; }
+    h2.section { page-break-after:avoid; }
+    table { page-break-inside:avoid; }
+    .kpi-grid { page-break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- غلاف -->
+<div class="cover">
+  <h1>دراسة الجدوى الاقتصادية</h1>
+  <h2>مشروع المجمع التعليمي الخاص<br>مجمع أسد بابل – بغداد</h2>
+  <div class="meta">
+    المستثمر والمشغّل: <strong>عمار الخفاجي</strong><br>
+    المشروع: حضانة + روضة + مدرسة ابتدائية + مدرسة متوسطة<br>
+    الموقع: مجمع أسد بابل السكني – بغداد – جمهورية العراق<br>
+    تاريخ إعداد الدراسة: مايو 2025<br>
+    مدة العقد: 20 سنة (السنوات 1-3 إعفاء كامل من الإيجار)
+  </div>
+  <div class="confidential">سري – للاستخدام الداخلي فقط</div>
+</div>
+
+<!-- ملخص تنفيذي -->
+<h2 class="section">أولاً: الملخص التنفيذي</h2>
+
+<p>يتناول هذا التقرير دراسة الجدوى الاقتصادية لمشروع إنشاء وتشغيل مجمع تعليمي خاص متكامل داخل مجمع أسد بابل السكني في بغداد، يضم أربع مؤسسات تعليمية موزعة على مبنيين: <strong>المبنى الأول</strong> يشمل حضانة وروضة أطفال، و<strong>المبنى الثاني</strong> يشمل مدرسة ابتدائية (6 صفوف) ومدرسة متوسطة (3 صفوف).</p>
+
+<p>يعمل المستثمر بصفة <strong>مشغّل ومستثمر فقط</strong>، إذ يتكفل الطرف الأول (مجمع أسد بابل) بإكمال جميع الأعمال الإنشائية وأعمال MEP والملاعب، مما يُخفّض الاستثمار الأولي المطلوب بشكل جوهري ويُسرّع تحقيق العائد.</p>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="val">~117 مليون</div>
+    <div class="lbl">إجمالي الاستثمار الأولي (دينار)</div>
+  </div>
+  <div class="kpi-card">
+    <div class="val">أقل من سنتين</div>
+    <div class="lbl">فترة استرداد رأس المال</div>
+  </div>
+  <div class="kpi-card">
+    <div class="val">+200%</div>
+    <div class="lbl">العائد التقديري على الاستثمار (ROI) خلال 5 سنوات</div>
+  </div>
+</div>
+
+<div class="alert green">
+  <strong>الخلاصة:</strong> المشروع ذو جدوى اقتصادية عالية جداً. الإعفاء من الإيجار للسنوات الثلاث الأولى يجعل الربح يبدأ من الشهر الأول تقريباً، وفترة الاسترداد تقع في السنة الثانية بافتراض إشغال متوسط.
+</div>
+
+<!-- نظرة عامة -->
+<h2 class="section">ثانياً: نظرة عامة على المشروع</h2>
+
+<table class="t">
+  <tr><td class="label">اسم المشروع</td><td>المجمع التعليمي الخاص – أسد بابل</td></tr>
+  <tr><td class="label">الموقع</td><td>مجمع أسد بابل السكني – بغداد – منطقة متوسطة</td></tr>
+  <tr><td class="label">المستثمر والمشغّل</td><td>عمار الخفاجي</td></tr>
+  <tr><td class="label">صاحب المبنى</td><td>مجمع أسد بابل</td></tr>
+  <tr><td class="label">طبيعة الدور</td><td>استثمار وتشغيل فقط (لا ملكية عقار)</td></tr>
+  <tr><td class="label">مدة العقد</td><td>20 سنة</td></tr>
+  <tr><td class="label">مرحلة الإعفاء</td><td>3 سنوات بدون إيجار</td></tr>
+  <tr><td class="label">المباني</td><td>مبنيان تعليميان مكتملي الإنشاء والتشطيب وأعمال MEP والملاعب</td></tr>
+  <tr><td class="label">المراحل الدراسية</td><td>حضانة + روضة + ابتدائية (6 صفوف) + متوسطة (3 صفوف)</td></tr>
+  <tr><td class="label">الطاقة الاستيعابية المبدئية</td><td>180 طالب (المبنى الثاني) + طاقة المبنى الأول (TBD)</td></tr>
+  <tr><td class="label">مصدر التمويل</td><td>ذاتي بالكامل</td></tr>
+</table>
+
+<!-- التحليل السوقي -->
+<h2 class="section">ثالثاً: التحليل السوقي</h2>
+
+<h3 class="sub">الفرصة السوقية</h3>
+<ul>
+  <li>الطلب على التعليم الخاص في العراق في ارتفاع مستمر بسبب ضعف التعليم الحكومي.</li>
+  <li>المجمعات السكنية الحديثة تعاني نقصاً حاداً في المدارس الخاصة القريبة داخل المجمع.</li>
+  <li>سكان المجمع هم الشريحة المستهدفة الأولى — طلب محلي مضمون ومتكرر.</li>
+  <li>المنطقة المتوسطة تدعم تسعيراً تنافسياً يجذب الطبقة المتوسطة والمتوسطة العليا.</li>
+</ul>
+
+<h3 class="sub">الميزات التنافسية</h3>
+<ul>
+  <li>الموقع داخل المجمع السكني = راحة مطلقة للأسر (مسافة صفر).</li>
+  <li>بنية تحتية جاهزة (MEP + ملاعب) بدون تكلفة على المستثمر.</li>
+  <li>بند الحصرية في العقد يمنع دخول أي منافس داخل المجمع.</li>
+  <li>تغطية شاملة للمراحل من الحضانة حتى المتوسطة = ولاء الأسرة لسنوات طويلة.</li>
+</ul>
+
+<h3 class="sub">الشريحة المستهدفة</h3>
+<table class="t">
+  <tr><th>الشريحة</th><th>المرحلة</th><th>القسط السنوي</th><th>ملاحظات</th></tr>
+  <tr><td>أسر داخل المجمع أولاً</td><td>حضانة + روضة</td><td>200,000 × 12 = 2,400,000</td><td>الأقل تنافسية في السوق</td></tr>
+  <tr><td>أسر داخل وخارج المجمع</td><td>ابتدائية</td><td>1,500,000</td><td>سعر تنافسي للمنطقة المتوسطة</td></tr>
+  <tr><td>أسر داخل وخارج المجمع</td><td>متوسطة</td><td>2,500,000</td><td>سعر مناسب جداً</td></tr>
+</table>
+
+<!-- الاستثمار الأولي -->
+<h2 class="section">رابعاً: الاستثمار الأولي المطلوب</h2>
+
+<div class="alert blue">
+  <strong>ملاحظة مهمة:</strong> الطرف الأول (مجمع أسد بابل) يتحمل كامل تكاليف البناء وأعمال MEP والملاعب والتشطيبات الداخلية. الاستثمار التالي يشمل فقط ما يتحمله المستثمر (عمار الخفاجي).
+</div>
+
+<table class="t">
+  <tr><th>البند</th><th>التقدير (دينار عراقي)</th><th>ملاحظات</th></tr>
+  <tr><td class="label">تراخيص ورسوم وزارة التربية</td><td>20,000,000</td><td>تقدير وسطي (10–30 مليون)</td></tr>
+  <tr><td class="label">أثاث المبنى الأول (حضانة + روضة)</td><td>15,000,000</td><td>طاولات، كراسي، ألعاب تعليمية، ديكور</td></tr>
+  <tr><td class="label">أثاث المبنى الثاني (ابتدائية + متوسطة)</td><td>18,000,000</td><td>9 صفوف × ~2 مليون/صف</td></tr>
+  <tr><td class="label">أجهزة حاسوب ومعدات تقنية</td><td>15,000,000</td><td>مختبر حاسوب، بروجيكتورات، نظام صوت</td></tr>
+  <tr><td class="label">مستلزمات ومواد تعليمية (سنة أولى)</td><td>8,000,000</td><td>كتب، قرطاسية، مواد مختبر</td></tr>
+  <tr><td class="label">تسويق وإطلاق</td><td>6,000,000</td><td>لافتات، إعلانات، يوم مفتوح</td></tr>
+  <tr><td class="label">رأس مال عامل (3 أشهر)</td><td>25,000,000</td><td>لتغطية الرواتب قبل جمع الأقساط</td></tr>
+  <tr><td class="label">احتياطي طوارئ (10%)</td><td>10,700,000</td><td>تجاوزات غير متوقعة</td></tr>
+  <tr><td class="total" colspan="2">إجمالي الاستثمار الأولي</td><td class="total">~117,700,000 دينار</td></tr>
+</table>
+
+<!-- التكاليف التشغيلية -->
+<h2 class="section">خامساً: التكاليف التشغيلية السنوية</h2>
+
+<table class="t">
+  <tr><th>البند</th><th>شهرياً (دينار)</th><th>سنوياً (دينار)</th></tr>
+  <tr><td class="label">رواتب الموظفين (معلمون + إداريون + حراسة + نظافة)</td><td>8,000,000</td><td>96,000,000</td></tr>
+  <tr><td class="label">خدمات (كهرباء، ماء، إنترنت)</td><td>1,500,000</td><td>18,000,000</td></tr>
+  <tr><td class="label">صيانة وتشغيل</td><td>500,000</td><td>6,000,000</td></tr>
+  <tr><td class="label">مواد تعليمية ومستلزمات</td><td>400,000</td><td>4,800,000</td></tr>
+  <tr><td class="label">تسويق مستمر</td><td>300,000</td><td>3,600,000</td></tr>
+  <tr><td class="label">متنوع وطوارئ</td><td>300,000</td><td>3,600,000</td></tr>
+  <tr><td class="total">إجمالي التكاليف التشغيلية</td><td class="total">11,000,000</td><td class="total">132,000,000</td></tr>
+</table>
+
+<!-- الإيرادات -->
+<h2 class="section">سادساً: الإيرادات المتوقعة</h2>
+
+<h3 class="sub">المبنى الثاني — الابتدائية والمتوسطة (بيانات محددة)</h3>
+<table class="t">
+  <tr><th>المرحلة</th><th>عدد الصفوف</th><th>الطاقة الكاملة</th><th>القسط السنوي</th><th>الإيراد السنوي الكامل</th></tr>
+  <tr><td>ابتدائية</td><td>6</td><td>120 طالب</td><td>1,500,000</td><td>180,000,000</td></tr>
+  <tr><td>متوسطة</td><td>3</td><td>60 طالب</td><td>2,500,000</td><td>150,000,000</td></tr>
+  <tr><td class="total" colspan="4">مجموع المبنى الثاني (طاقة كاملة)</td><td class="total">330,000,000</td></tr>
+</table>
+
+<h3 class="sub">المبنى الأول — الحضانة والروضة (تقديري – عدد الصفوف لم يحدد بعد)</h3>
+<table class="t">
+  <tr><th>السيناريو</th><th>عدد الأطفال</th><th>القسط الشهري</th><th>الإيراد السنوي</th></tr>
+  <tr><td>متحفظ (2 صف)</td><td>30</td><td>200,000</td><td>72,000,000</td></tr>
+  <tr><td class="highlight">متوسط (4 صفوف)</td><td>60</td><td>200,000</td><td>144,000,000</td></tr>
+  <tr><td>متفائل (6 صفوف)</td><td>90</td><td>200,000</td><td>216,000,000</td></tr>
+</table>
+
+<div class="alert yellow"><strong>تنبيه:</strong> ستُستخدم بيانات السيناريو المتوسط (4 صفوف – 60 طفل) كأساس للحسابات أدناه. يُنصح بتحديد عدد الصفوف مبكراً لرفع دقة الدراسة.</div>
+
+<h4 class="mini">الإيراد السنوي الإجمالي عند الطاقة الكاملة:</h4>
+<table class="t">
+  <tr><td class="label">المبنى الأول (حضانة + روضة)</td><td>144,000,000</td></tr>
+  <tr><td class="label">المبنى الثاني (ابتدائية + متوسطة)</td><td>330,000,000</td></tr>
+  <tr><td class="total">الإجمالي</td><td class="total">474,000,000 دينار / سنة</td></tr>
+</table>
+
+<!-- التدفق النقدي -->
+<h2 class="section">سابعاً: التدفق النقدي التقديري (20 سنة)</h2>
+
+<p>يعتمد النموذج على منحنى إشغال واقعي: المشاريع التعليمية عادةً تبدأ بـ 30-40% ثم ترتفع تدريجياً مع السمعة والتوسع.</p>
+
+<table class="t">
+  <tr><th>السنة</th><th>نسبة الإشغال</th><th>الإيراد السنوي</th><th>التكاليف التشغيلية</th><th>الإيجار</th><th>صافي الربح</th><th>الربح التراكمي</th></tr>
+  <tr><td>1</td><td>35%</td><td>165,900,000</td><td>132,000,000</td><td class="green">صفر</td><td class="green">33,900,000</td><td>33,900,000</td></tr>
+  <tr><td>2</td><td>55%</td><td>260,700,000</td><td>132,000,000</td><td class="green">صفر</td><td class="green">128,700,000</td><td class="highlight">162,600,000</td></tr>
+  <tr><td>3</td><td>70%</td><td>331,800,000</td><td>132,000,000</td><td class="green">صفر</td><td class="green">199,800,000</td><td>362,400,000</td></tr>
+  <tr><td>4</td><td>80%</td><td>379,200,000</td><td>132,000,000</td><td>TBD</td><td class="green">247,200,000*</td><td>609,600,000*</td></tr>
+  <tr><td>5</td><td>90%</td><td>426,600,000</td><td>132,000,000</td><td>TBD</td><td class="green">294,600,000*</td><td>904,200,000*</td></tr>
+  <tr><td>6–10</td><td>100%</td><td>474,000,000</td><td>136,000,000</td><td>TBD</td><td class="green">338,000,000*</td><td>2,594,200,000*</td></tr>
+  <tr><td>11–15</td><td>100%+رفع أقساط</td><td>570,000,000</td><td>145,000,000</td><td>TBD</td><td class="green">425,000,000*</td><td>4,719,200,000*</td></tr>
+  <tr><td>16–20</td><td>100%+رفع أقساط</td><td>660,000,000</td><td>155,000,000</td><td>TBD</td><td class="green">505,000,000*</td><td>7,244,200,000*</td></tr>
+</table>
+<p style="font-size:11pt;color:#555;">* قبل خصم الإيجار الذي لم يُحدد بعد. الأرقام من السنة 6+ تشمل افتراض رفع تدريجي في الأقساط وعدد الطلاب.</p>
+
+<!-- المؤشرات المالية -->
+<h2 class="section">ثامناً: المؤشرات المالية الرئيسية</h2>
+
+<table class="t">
+  <tr><th>المؤشر</th><th>القيمة</th><th>التقييم</th></tr>
+  <tr><td class="label">إجمالي الاستثمار الأولي</td><td>~117,700,000 دينار</td><td>منخفض جداً (المبنى جاهز)</td></tr>
+  <tr><td class="label">فترة استرداد رأس المال</td><td>أقل من سنتين</td><td class="green">ممتاز</td></tr>
+  <tr><td class="label">الربح في السنة الأولى</td><td>~33,900,000</td><td class="green">إيجابي فوراً</td></tr>
+  <tr><td class="label">الربح في السنة الثالثة</td><td>~199,800,000</td><td class="green">ممتاز</td></tr>
+  <tr><td class="label">هامش الربح عند الطاقة الكاملة</td><td>~71% (قبل الإيجار)</td><td class="green">مرتفع جداً</td></tr>
+  <tr><td class="label">العائد على الاستثمار (ROI) / 5 سنوات</td><td>>200%</td><td class="green">استثنائي</td></tr>
+  <tr><td class="label">الإيراد السنوي عند الطاقة الكاملة</td><td>474,000,000</td><td class="green">قوي</td></tr>
+  <tr><td class="label">نقطة التعادل (Break-even)</td><td>~132,000,000 دينار/سنة</td><td>يُحقق عند ~28% إشغال فقط</td></tr>
+  <tr><td class="label">الإشغال اللازم لتغطية التكاليف</td><td>28% فقط</td><td class="green">هامش أمان عالٍ</td></tr>
+</table>
+
+<div class="alert green">
+  <strong>نقطة مضيئة:</strong> نقطة التعادل تُحقق عند 28% إشغال فقط. هذا يعني أن المشروع يغطي تكاليفه التشغيلية حتى لو جاء ثلث الطلاب فقط — هامش أمان استثنائي.
+</div>
+
+<!-- تحليل المخاطر -->
+<h2 class="section">تاسعاً: تحليل المخاطر</h2>
+
+<table class="t">
+  <tr><th>الخطر</th><th>الاحتمالية</th><th>الأثر</th><th>المعالجة</th></tr>
+  <tr>
+    <td>تأخر تسليم المبنى جاهزاً</td>
+    <td>متوسطة</td>
+    <td>تأجيل الافتتاح</td>
+    <td>تثبيت موعد التسليم في العقد مع غرامات</td>
+  </tr>
+  <tr>
+    <td>ضعف الإقبال في السنة الأولى</td>
+    <td>منخفضة–متوسطة</td>
+    <td>تراجع الإيرادات</td>
+    <td>حملة تسويقية قبل الافتتاح بـ 3 أشهر + عروض تعريفية</td>
+  </tr>
+  <tr>
+    <td>صعوبة الحصول على الترخيص</td>
+    <td>منخفضة</td>
+    <td>تأجيل العمل</td>
+    <td>البدء بإجراءات الترخيص فور توقيع العقد</td>
+  </tr>
+  <tr>
+    <td>ارتفاع رواتب الكوادر التعليمية</td>
+    <td>متوسطة</td>
+    <td>ارتفاع التكاليف</td>
+    <td>ربط رفع الأقساط بزيادة الرواتب تدريجياً</td>
+  </tr>
+  <tr>
+    <td>منافسة جديدة قريبة</td>
+    <td>منخفضة</td>
+    <td>انخفاض الإشغال</td>
+    <td>بند الحصرية في العقد يحمي داخل المجمع</td>
+  </tr>
+  <tr>
+    <td>تذبذب الوضع الأمني أو الاقتصادي</td>
+    <td>منخفضة–متوسطة</td>
+    <td>تراجع الدفعات</td>
+    <td>نظام دفع مرن + احتياطي نقدي 3 أشهر</td>
+  </tr>
+</table>
+
+<!-- التوصيات -->
+<h2 class="section">عاشراً: التوصيات</h2>
+
+<h3 class="sub">أولويات ما قبل الافتتاح</h3>
+<ol>
+  <li><strong>تحديد عدد صفوف المبنى الأول</strong> (الحضانة والروضة) لتدقيق الأرقام.</li>
+  <li><strong>البدء بإجراءات الترخيص فوراً</strong> بعد توقيع العقد، إذ قد تستغرق 3–6 أشهر.</li>
+  <li><strong>إطلاق حملة تسويقية</strong> داخل المجمع قبل الافتتاح بـ 3 أشهر على الأقل (واتساب، لافتات، يوم مفتوح).</li>
+  <li><strong>توظيف المديرين والكوادر الأساسية</strong> قبل الافتتاح بشهرين.</li>
+  <li><strong>اشتراط تسليم المبنى</strong> جاهزاً 100% (MEP + ملاعب + تشطيبات) مع محضر استلام رسمي.</li>
+</ol>
+
+<h3 class="sub">استراتيجية التسعير المقترحة</h3>
+<ul>
+  <li>السنة الأولى: الأقساط الحالية كما هي لجذب أكبر عدد.</li>
+  <li>السنة الثالثة: رفع تدريجي بنسبة 10–15%.</li>
+  <li>السنة الخامسة والسابعة: رفع إضافي تزامناً مع تحسين الخدمات وبناء السمعة.</li>
+</ul>
+
+<h3 class="sub">بند الإيجار — توصية نهائية</h3>
+<div class="alert blue">
+  بناءً على أرقام الدراسة، يُنصح بـ <strong>إيجار ثابت متصاعد</strong> يبدأ من السنة الرابعة بمبلغ لا يتجاوز <strong>20–30 مليوناً سنوياً</strong> في البداية (أقل من 10% من الإيراد)، مع مراجعة كل 3 سنوات. تجنّب النسبة المئوية لأن أرباحك ستنمو بشكل كبير في السنوات اللاحقة.
+</div>
+
+<!-- ملاحظة ختامية -->
+<hr>
+<div class="alert yellow" style="font-size:11.5pt;">
+  <strong>ملاحظة:</strong> هذه الدراسة مبنية على البيانات المتاحة وتقديرات السوق العراقي. يُنصح بمراجعة متخصص مالي محلي لتدقيق الأرقام قبل اتخاذ القرار النهائي. الأرقام قابلة للتحديث فور تحديد عدد صفوف المبنى الأول وقيمة الإيجار النهائية.
+</div>
+
+<p style="text-align:center; margin-top:20px; font-size:11pt; color:#888;">
+  أُعدّت هذه الدراسة لصالح المستثمر عمار الخفاجي — مايو 2025<br>
+  جميع الأرقام بالدينار العراقي
+</p>
+
+</div>
+</body>
+</html>
